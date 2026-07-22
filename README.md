@@ -41,6 +41,10 @@ Copy lives in `src/app/data/content.ts`, not in templates — edit it there.
   under `prefers-reduced-motion: reduce`.
 - **Prerendering**: `outputMode: "static"` in `angular.json` — the build emits
   plain HTML, no server function. Drop that key to fall back to a client-only SPA.
+- **Favicon** is a clay tile with the cream ✦. `shared/favicon-sparkle.ts` redraws
+  it on a canvas ~12fps for a slow twinkle, pausing when the tab is hidden and
+  never starting under `prefers-reduced-motion`. Safari ignores canvas favicons
+  and shows the static `.ico`.
 - **Responsive** at two breakpoints, 900px and 560px. Verified free of horizontal
   overflow at 375 / 414 / 768 / 1024 / 1440.
 - **Contrast**: six ink/accent tokens sit one step darker than the design handoff
