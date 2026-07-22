@@ -9,7 +9,7 @@ Senior full-stack and frontend-driven engineer with 26 years of research-driven 
 
 ## Skills
 
-- **Front end:** Angular (v21: standalone components, signals, native control flow), TypeScript, RxJS, React, JavaScript, HTML, CSS, Sass, responsive design, accessibility, design systems, component libraries, Kendo UI, Bootstrap
+- **Front end:** Angular (v21: standalone components, signals, native control flow), TypeScript, RxJS, React, JavaScript, HTML, CSS, Sass, responsive design, accessibility, design systems, component libraries
 - **Back end:** .NET 9, C#, ASP.NET Core, REST API design, Entity Framework Core, SQL Server, ClickHouse
 - **Design:** Figma, design tokens, coded components, user research, lo-fi → hi-fi prototyping, Apache ECharts data viz
 - **AI-assisted development:** Claude Code, Cursor, MCP tooling, agent skills/hooks, AGENTS.md instruction bridges, pattern audits, schema-aware code generation
@@ -24,7 +24,7 @@ Full-stack engineer on a multi-tenant SaaS platform powering Amazon, Walmart, an
 - Lead the design system and component library — design tokens, accessibility, responsive layouts, Kendo UI/Bootstrap interop, Sass module migration — paired with AGENTS.md instruction bridges so coding agents inherit the same patterns a senior engineer would apply.
 - Develop reusable agent skills, hooks, and MCP tooling (pattern audits, UI reviews, schema-aware code generation) that turn one-off engineering judgment into always-on guardrails.
 - Contribute to the Angular v21 modernization (standalone components, signals, native control flow) and Apache ECharts data-viz consolidation.
-- Code review, architecture pairing, and frontend patterns across a mixed Bootstrap/Kendo/Material legacy surface.
+- Set the front-end patterns that hold a mixed Bootstrap/Kendo/Material legacy surface together, and pair on architecture as new work lands against it.
 
 ### Platform Design Manager — HealthStream (Nashville, TN) · Dec 2019 – Jul 2021
 
