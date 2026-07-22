@@ -134,7 +134,7 @@ export const ROLES: readonly Role[] = [
     years: '2016 — 19',
     what: 'Senior Developer, UX',
     where: 'HealthStream',
-    note: 'started the design system',
+    note: 'started the design system — in code',
   },
   {
     years: '2013 — 16',
