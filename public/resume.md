@@ -40,7 +40,8 @@ Full-stack engineer on a multi-tenant SaaS platform powering Amazon, Walmart, an
 
 ### Senior Software Developer — Cigna-HealthSpring (Nashville, TN) · Jul 2013 – Jun 2016
 
-- Led the Provider Portal redesign end to end for 1M+ providers — the front-end build plus the on-site visits and customer interviews that informed it.
+- Wrote the member portal front to controller in .NET MVC, and designed it.
+- Led the Provider Portal redesign for 1M+ providers — front-end build plus the on-site visits and customer interviews that informed it.
 - Moved the organization toward design-centric practice (monthly cross-team design syncs); led adoption of Bootstrap.
 - Served as front-end/UI consultant across 10+ teams.
 

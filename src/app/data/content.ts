@@ -31,8 +31,8 @@ export const WORK: readonly WorkCard[] = [
     kicker: 'Cigna-HealthSpring · 2013 — 16',
     kickerTone: 'tan',
     title: 'A portal one million providers rely on',
-    body: 'Led the Provider Portal redesign end to end — the front-end build plus the on-site visits and customer interviews that informed it. Drove Bootstrap adoption and consulted on UI across 10+ teams.',
-    tags: ['Front-end lead', 'Bootstrap', '1M+ users'],
+    body: 'Wrote the member portal front to controller in .NET MVC — and designed it. Led the Provider Portal redesign for 1M+ providers, drove Bootstrap adoption across the org, and consulted on UI for 10+ teams.',
+    tags: ['.NET MVC', 'Front-end lead', '1M+ users'],
     tilt: -0.4,
   },
 ];
