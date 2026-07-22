@@ -5,7 +5,7 @@ Nashville, TN · amanda@amanda-myers.com · [linkedin.com/in/amandalynnmyers](ht
 
 ## Summary
 
-Senior full-stack and frontend-driven engineer with 26 years of research-driven software development — 20+ of them in front-end and UX. I build beautiful, useful products people love to use, and I'm currently helping AI coding agents become safe front-end teammates across production and greenfield codebases. Persistence, curiosity, obsessive attention to detail, and a strong bias toward action.
+Senior full-stack and frontend-driven engineer with 26 years of research-driven software development — 20+ of them in front-end and UX. I build beautiful, useful products people love to use. My niche: encoding a design system where coding agents actually read it, so generated code lands on pattern instead of drifting from it. Persistence, curiosity, obsessive attention to detail, and a strong bias toward action.
 
 ## Skills
 
@@ -21,7 +21,7 @@ Senior full-stack and frontend-driven engineer with 26 years of research-driven 
 Full-stack engineer on a multi-tenant SaaS platform powering Amazon, Walmart, and Criteo marketplace advertising. Driving Kapoq's AI-assisted development practice on a brownfield Angular/.NET codebase.
 
 - Build features end-to-end: Angular v21 components and reactive state, ASP.NET Core REST APIs on EF Core, SQL Server schema, ClickHouse analytical queries powering tenant-facing reporting.
-- Lead the design system and component library — design tokens, accessibility, responsive layouts, Kendo UI/Bootstrap interop, Sass module migration — paired with AGENTS.md instruction bridges so AI tools carry senior-level design intent.
+- Lead the design system and component library — design tokens, accessibility, responsive layouts, Kendo UI/Bootstrap interop, Sass module migration — paired with AGENTS.md instruction bridges so coding agents inherit the same patterns a senior engineer would apply.
 - Develop reusable agent skills, hooks, and MCP tooling (pattern audits, UI reviews, schema-aware code generation) that turn one-off engineering judgment into always-on guardrails.
 - Contribute to the Angular v21 modernization (standalone components, signals, native control flow) and Apache ECharts data-viz consolidation.
 - Code review, architecture pairing, and frontend patterns across a mixed Bootstrap/Kendo/Material legacy surface.

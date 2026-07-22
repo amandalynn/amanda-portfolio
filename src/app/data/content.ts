@@ -15,7 +15,7 @@ export const WORK: readonly WorkCard[] = [
     kicker: 'Kapoq · 2021 — now',
     kickerTone: 'accent',
     title: 'Making a brownfield codebase a safe place for AI agents',
-    body: "Full-stack on a multi-tenant SaaS platform: Angular v21 components and reactive state, ASP.NET Core APIs on EF Core, SQL Server schema, and ClickHouse queries behind tenant reporting. Alongside it, building Kapoq's AI-assisted development practice — design systems agents can read, AGENTS.md bridges, reusable guardrails.",
+    body: "Full-stack on a multi-tenant SaaS platform: Angular v21 components and reactive state, ASP.NET Core APIs on EF Core, SQL Server schema, and ClickHouse queries behind tenant reporting. Alongside it, building Kapoq's AI-assisted development practice: encoding the design system where coding agents actually read it, so what they generate lands on pattern instead of beside it.",
     tags: ['Angular v21', 'ASP.NET Core', 'ClickHouse', 'Claude Code'],
     tilt: -0.4,
   },
@@ -101,6 +101,9 @@ export const TOOLBOX: readonly ToolboxColumn[] = [
       },
       { text: 'MCP tooling & agent skills' },
       { text: 'AGENTS.md instruction bridges' },
+      {
+        text: 'Keeping generated code on pattern — the design system as guardrails agents can follow',
+      },
       {
         text: '~5x productivity — humans still lay eyes on the code',
         aside: true,
