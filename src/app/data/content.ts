@@ -169,6 +169,12 @@ export const ROLES: readonly Role[] = [
     note: 'yes, that Gibson',
   },
   {
+    years: '2003 — 06',
+    what: 'Owner & Software Developer',
+    where: 'Pensacola Software',
+    note: 'my own shop — medical examiner & shipping systems',
+  },
+  {
     years: '1999 — 03',
     what: 'Software Developer',
     where: 'DeSai Systems & CED',

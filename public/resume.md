@@ -63,6 +63,12 @@ Full-stack engineer on a multi-tenant SaaS platform powering Amazon, Walmart, an
 
 - Project manager/lead developer for vendor inventory management (mobile + RFID), supply chain management, and dealer portals integrated with Dynamics GP.
 
+### Owner & Software Developer — Pensacola Software (Pensacola, FL) · 2003 – 2006
+
+- Founded and ran an independent software company, handling client work end to end.
+- Built medical examiner case management software for Quincy Technology.
+- Built shipping and packing software for United Record Pressing.
+
 ### Software Developer — Computer Education and Design (Gulf Breeze, FL) · 2001 – 2003
 
 - Custom ASP.NET/Classic ASP + SQL Server development for commercial and government clients.
