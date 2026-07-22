@@ -122,7 +122,7 @@ export const ROLES: readonly Role[] = [
     years: '2021 — now',
     what: 'Senior front-end software developer',
     where: 'Kapoq, Franklin TN',
-    note: 'agents, guardrails & design systems',
+    note: 'front-end dev, agents & design systems',
   },
   {
     years: '2019 — 21',
