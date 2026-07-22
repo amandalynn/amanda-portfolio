@@ -13,6 +13,19 @@ const FRAME_MS = 80;
 const CYCLE_MS = 4200;
 
 /**
+ * Glints that pop in the diagonal corners. The star's points reach the edge at
+ * N/S/E/W, so the diagonals stay clear and these never merge with the mark.
+ * Staggered `start` values keep something twinkling most of the cycle.
+ */
+const GLINTS: readonly { x: number; y: number; r: number; start: number; dur: number }[] = [
+  { x: 24, y: 8, r: 1.4, start: 0.0, dur: 0.22 },
+  { x: 7, y: 7, r: 1.0, start: 0.18, dur: 0.2 },
+  { x: 25, y: 25, r: 1.2, start: 0.42, dur: 0.22 },
+  { x: 8, y: 24, r: 0.9, start: 0.62, dur: 0.18 },
+  { x: 16, y: 5, r: 0.8, start: 0.8, dur: 0.16 },
+];
+
+/**
  * Gently twinkles the favicon: the star breathes, and a small glint crosses it
  * once per cycle. Mirrors the contact section's starfield.
  *
@@ -94,21 +107,33 @@ export class FaviconSparkle {
     ctx.fill(new Path2D(STAR));
     ctx.restore();
 
-    // A brief glint in the upper-right dead corner — the star's points reach the
-    // edge at N/S/E/W, so the diagonals stay clear and it never merges with the
-    // mark. Favicon-scale echo of the shooting star.
-    if (t < 0.18) {
-      const p = t / 0.18;
+    // Corner glints, each a four-point spark that swells and fades.
+    ctx.save();
+    ctx.fillStyle = CREAM;
+    for (const g of GLINTS) {
+      // wrap so a glint straddling the end of the cycle still completes
+      const local = (t - g.start + 1) % 1;
+      if (local > g.dur) continue;
+      const p = local / g.dur;
       const fade = Math.sin(p * Math.PI);
-      ctx.save();
-      ctx.globalAlpha = fade * 0.85;
-      ctx.fillStyle = CREAM;
-      ctx.beginPath();
-      ctx.arc(23 + p * 4, 9 - p * 3, 1.2, 0, Math.PI * 2);
-      ctx.fill();
-      ctx.restore();
+      ctx.globalAlpha = fade * 0.95;
+      this.spark(ctx, g.x, g.y, g.r * (0.5 + fade * 0.9));
     }
+    ctx.restore();
 
     this.link.href = this.canvas.toDataURL('image/png');
+  }
+
+  /** A tiny four-point spark — the star mark in miniature. */
+  private spark(ctx: CanvasRenderingContext2D, x: number, y: number, r: number): void {
+    const waist = r * 0.28;
+    ctx.beginPath();
+    ctx.moveTo(x, y - r);
+    ctx.quadraticCurveTo(x + waist, y - waist, x + r, y);
+    ctx.quadraticCurveTo(x + waist, y + waist, x, y + r);
+    ctx.quadraticCurveTo(x - waist, y + waist, x - r, y);
+    ctx.quadraticCurveTo(x - waist, y - waist, x, y - r);
+    ctx.closePath();
+    ctx.fill();
   }
 }
