@@ -23,7 +23,7 @@ export const WORK: readonly WorkCard[] = [
     kicker: 'HealthStream · 2016 — 21',
     kickerTone: 'sage',
     title: 'A design system an entire ecosystem could agree on',
-    body: 'Initiated and led the design system across business units — design tokens and a coded component library, plus the front-end architecture behind the MyTeam dashboard platform. Backed by user research to prove it solved the right problems.',
+    body: 'Started the design system across business units and coded it — tokens, a component library, and the front-end architecture behind the MyTeam dashboard. Research kept it honest about what was worth solving.',
     tags: ['Component library', 'Front-end architecture', 'Design tokens'],
     tilt: 0.4,
   },
