@@ -58,7 +58,7 @@ export const TOOLBOX: readonly ToolboxColumn[] = [
     items: [
       {
         lead: 'Angular, deeply',
-        text: '— led the v21 modernization: standalone components, signals, native control flow',
+        text: '— standalone components, signals and native control flow, through the v21 modernization',
       },
       {
         text: 'TypeScript & RxJS — reactive state design, not just consumption',
