@@ -63,6 +63,7 @@ export const TOOLBOX: readonly ToolboxColumn[] = [
       {
         text: 'TypeScript & RxJS — reactive state design, not just consumption',
       },
+      { text: 'React — earlier projects, when it was the right fit' },
       { text: 'Sass, responsive layouts' },
       { text: 'Design systems & a11y — built them at three companies' },
       { text: 'Kendo UI · Bootstrap (led its adoption at Cigna, 2013)' },

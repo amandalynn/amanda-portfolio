@@ -9,7 +9,7 @@ Senior full-stack and frontend-driven engineer with 26 years of research-driven 
 
 ## Skills
 
-- **Front end:** Angular (v21: standalone components, signals, native control flow), TypeScript, RxJS, JavaScript, HTML, CSS, Sass, responsive design, accessibility, design systems, component libraries, Kendo UI, Bootstrap
+- **Front end:** Angular (v21: standalone components, signals, native control flow), TypeScript, RxJS, React, JavaScript, HTML, CSS, Sass, responsive design, accessibility, design systems, component libraries, Kendo UI, Bootstrap
 - **Back end:** .NET 9, C#, ASP.NET Core, REST API design, Entity Framework Core, SQL Server, ClickHouse
 - **Design:** Figma, design tokens, coded components, user research, lo-fi → hi-fi prototyping, Apache ECharts data viz
 - **AI-assisted development:** Claude Code, Cursor, MCP tooling, agent skills/hooks, AGENTS.md instruction bridges, pattern audits, schema-aware code generation
