@@ -1,7 +1,7 @@
 # Amanda Myers
 
 **Senior Full-Stack & UX Engineer** — Angular · .NET · Design Systems
-Nashville, TN · amandalynn@me.com · [linkedin.com/in/amandalynnmyers](https://www.linkedin.com/in/amandalynnmyers) · [uxing.io](https://uxing.io)
+Nashville, TN · amanda@amanda-myers.com · [linkedin.com/in/amandalynnmyers](https://www.linkedin.com/in/amandalynnmyers) · [uxing.io](https://uxing.io)
 
 ## Summary
 

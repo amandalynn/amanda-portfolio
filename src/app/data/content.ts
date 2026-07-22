@@ -183,7 +183,7 @@ export interface Hobby {
 export const HOBBIES: readonly Hobby[] = [
   {
     src: 'images/hobby-stars.jpg',
-    alt: 'A total solar eclipse at totality, the sun flaring at the edge of the moon',
+    alt: 'The Milky Way arcing over a lifeguard tower on a dark beach',
     placeholder: 'A night sky shot',
     caption: 'chasing stars ✦',
   },

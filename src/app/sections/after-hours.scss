@@ -24,6 +24,14 @@ section {
   flex-wrap: wrap;
 }
 
+/* The four shots come from different cameras, years and light. A shared
+   faded-print grade warms them into one set that belongs on the paper palette.
+   Applied to the slot host so it covers the image without piercing the
+   component boundary. */
+am-photo-slot {
+  filter: sepia(0.34) saturate(0.72) contrast(0.94) brightness(1.08);
+}
+
 figure {
   margin: 0;
   background: var(--card);
