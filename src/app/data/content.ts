@@ -183,25 +183,25 @@ export interface Hobby {
 export const HOBBIES: readonly Hobby[] = [
   {
     src: 'images/hobby-stars.jpg',
-    alt: 'A night sky',
+    alt: 'A total solar eclipse at totality, the sun flaring at the edge of the moon',
     placeholder: 'A night sky shot',
     caption: 'chasing stars ✦',
   },
   {
     src: 'images/hobby-bike.jpg',
-    alt: 'Mountain biking',
+    alt: 'Handlebars of a mountain bike on a wooded singletrack trail',
     placeholder: 'You + your bike',
     caption: 'knobby tires > pavement',
   },
   {
     src: 'images/hobby-photo.jpg',
-    alt: 'A favorite photograph',
+    alt: 'Amanda holding a camera to her eye, backlit',
     placeholder: 'A favorite photograph',
     caption: 'a camera, always',
   },
   {
     src: 'images/hobby-art.jpg',
-    alt: 'A watercolor painting',
+    alt: 'A watercolor of a dandelion scattering into splashes of color',
     placeholder: 'A watercolor of yours',
     caption: 'watercolors on Sunday',
   },
