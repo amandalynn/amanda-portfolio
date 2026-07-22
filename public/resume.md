@@ -18,7 +18,7 @@ Senior full-stack and frontend-driven engineer with 26 years of research-driven 
 
 ### Senior Front-End Software Developer — Kapoq (Franklin, TN) · Aug 2021 – present
 
-Full-stack engineer on a multi-tenant SaaS platform powering Amazon, Walmart, and Criteo marketplace advertising. Driving Kapoq's AI-assisted development practice on a brownfield Angular/.NET codebase.
+Full-stack engineer on a multi-tenant SaaS platform powering Amazon, Walmart, and Criteo marketplace advertising — joined pre-customer and helped carry it to profitability. Driving Kapoq's AI-assisted development practice on a brownfield Angular/.NET codebase.
 
 - Build features end-to-end: Angular v21 components and reactive state, ASP.NET Core REST APIs on EF Core, SQL Server schema, ClickHouse analytical queries powering tenant-facing reporting.
 - Lead the design system and component library — design tokens, accessibility, responsive layouts, Kendo UI/Bootstrap interop, Sass module migration — paired with AGENTS.md instruction bridges so coding agents inherit the same patterns a senior engineer would apply.
@@ -40,7 +40,7 @@ Full-stack engineer on a multi-tenant SaaS platform powering Amazon, Walmart, an
 
 ### Senior Software Developer — Cigna-HealthSpring (Nashville, TN) · Jul 2013 – Jun 2016
 
-- Wrote the member portal front to controller in .NET MVC, and designed it.
+- Designed the member portal, then built it in .NET MVC — the front end and the controllers behind it.
 - Led the Provider Portal redesign for 1M+ providers — front-end build plus the on-site visits and customer interviews that informed it.
 - Moved the organization toward design-centric practice (monthly cross-team design syncs); led adoption of Bootstrap.
 - Served as front-end/UI consultant across 10+ teams.
