@@ -102,7 +102,7 @@ export const TOOLBOX: readonly ToolboxColumn[] = [
       { text: 'MCP tooling & agent skills' },
       { text: 'AGENTS.md instruction bridges' },
       {
-        text: '~5x productivity, every PR still reviewed by a human (me)',
+        text: '~5x productivity — humans still lay eyes on the code',
         aside: true,
       },
     ],
