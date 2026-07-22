@@ -1,0 +1,38 @@
+<section id="toolbox">
+  <div class="wrap">
+    <am-section-head
+      heading="The toolbox"
+      aside="(what I build with, daily)"
+      [washWidth]="160"
+      amReveal
+    />
+    <p class="intro" amReveal>
+      Not tools a project handed me — tools I've gone deep on. Front-end architecture for 20+ years;
+      shipping .NET since the early 2000s.
+    </p>
+
+    <div class="columns">
+      @for (column of columns; track column.label) {
+        <div class="column" [class]="'column--' + column.tone" amReveal>
+          <div class="label">{{ column.label }}</div>
+          <div class="items">
+            @for (item of column.items; track item.text) {
+              <span [class.aside]="item.aside">
+                @if (item.lead) {
+                  <strong>{{ item.lead }}</strong>
+                  {{ ' ' }}
+                }
+                {{ item.text }}
+              </span>
+            }
+          </div>
+        </div>
+      }
+    </div>
+
+    <p class="outro" amReveal>
+      Day to day at Kapoq: features end-to-end — Angular components and reactive state, ASP.NET Core
+      APIs on EF Core, SQL Server schema, ClickHouse queries powering tenant-facing reporting.
+    </p>
+  </div>
+</section>

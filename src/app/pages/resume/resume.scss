@@ -1,0 +1,228 @@
+:host {
+  --page-w: 8.5in;
+  --page-h: 11in;
+  --page-margin: 0.7in;
+
+  display: block;
+  background: var(--paper-alt);
+  min-height: 100vh;
+  padding-bottom: 28px;
+  font-family: var(--serif);
+}
+
+/* the sheet — Letter width on screen, paginated by @page on print */
+.sheet {
+  width: var(--page-w);
+  min-height: var(--page-h);
+  margin: 28px auto;
+  padding: var(--page-margin);
+  background: #fff;
+  box-shadow: 0 8px 24px rgb(51 49 43 / 14%);
+}
+
+.masthead {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  border-bottom: 2px solid var(--sage);
+  padding-bottom: 14px;
+
+  h1 {
+    font-family: var(--serif);
+    font-size: 31px;
+    font-weight: 400;
+    line-height: 1.1;
+  }
+}
+
+.masthead__title {
+  font-size: 13.5px;
+  font-style: italic;
+  color: var(--accent);
+  margin-top: 6px;
+}
+
+.masthead__contact {
+  text-align: right;
+  font-family: var(--sans);
+  font-size: 11.5px;
+  line-height: 1.7;
+  color: var(--ink-2);
+}
+
+.summary {
+  font-family: var(--sans);
+  font-size: 13.5px;
+  line-height: 1.6;
+  margin: 16px 0 0;
+}
+
+h2 {
+  font-family: var(--sans);
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--sage);
+  border-bottom: 1px solid var(--line);
+  padding-bottom: 5px;
+  margin: 22px 0 10px;
+
+  &.tight {
+    margin-bottom: 4px;
+  }
+}
+
+.skills {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 6px 26px;
+  font-family: var(--sans);
+  font-size: 12.5px;
+  line-height: 1.55;
+  break-inside: avoid;
+}
+
+.role {
+  break-inside: avoid;
+  margin-top: 16px;
+
+  &.role--first {
+    margin-top: 12px;
+  }
+}
+
+.role__head {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+
+  h3 {
+    font-family: var(--serif);
+    font-size: 14.5px;
+    font-weight: 700;
+  }
+}
+
+.role__dates {
+  font-family: var(--sans);
+  font-size: 11.5px;
+  font-style: italic;
+  color: var(--ink-muted);
+}
+
+.role__blurb {
+  font-family: var(--sans);
+  font-size: 12.5px;
+  line-height: 1.55;
+  margin: 5px 0 0;
+  color: var(--ink-body);
+}
+
+.bullets {
+  font-family: var(--sans);
+  font-size: 12.5px;
+  line-height: 1.55;
+  margin: 6px 0 0;
+  padding-left: 20px;
+}
+
+.endnotes {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 26px;
+  margin-top: 20px;
+  break-inside: avoid;
+
+  h2 {
+    margin: 0 0 8px;
+  }
+
+  p {
+    font-family: var(--sans);
+    font-size: 12.5px;
+    line-height: 1.55;
+    margin: 0;
+  }
+}
+
+/* a quiet way back to the site — never printed */
+.backlink {
+  width: var(--page-w);
+  margin: 24px auto 0;
+  font-family: var(--sans);
+  font-size: 13px;
+  font-style: italic;
+  color: var(--ink-muted);
+}
+
+@page {
+  size: letter portrait;
+  margin: 0.7in;
+}
+
+@media print {
+  :host {
+    background: #fff;
+    min-height: 0;
+    padding-bottom: 0;
+  }
+
+  .sheet {
+    width: auto;
+    min-height: 0;
+    margin: 0;
+    padding: 0;
+    box-shadow: none;
+  }
+
+  .backlink {
+    display: none;
+  }
+
+  a {
+    color: var(--ink);
+  }
+}
+
+/* On screens narrower than the sheet, let it fill the viewport. Print is
+   unaffected — @page still governs the actual Letter pagination. */
+@media (max-width: 900px) {
+  .sheet,
+  .backlink {
+    width: 100%;
+    max-width: var(--page-w);
+  }
+
+  .sheet {
+    margin: 0 auto;
+    padding: 32px 24px;
+  }
+
+  .backlink {
+    padding: 0 24px;
+  }
+}
+
+@media (max-width: 560px) {
+  .masthead {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+
+  .masthead__contact {
+    text-align: left;
+  }
+
+  .skills,
+  .endnotes {
+    grid-template-columns: 1fr;
+  }
+
+  .role__head {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 2px;
+  }
+}

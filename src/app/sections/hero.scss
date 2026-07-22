@@ -1,0 +1,149 @@
+header {
+  max-width: 1080px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 340px;
+  gap: 64px;
+  align-items: center;
+  padding: 84px 32px 90px;
+}
+
+.greeting {
+  font-family: var(--hand);
+  font-size: 26px;
+  color: var(--sage);
+  margin-bottom: 10px;
+  transform: rotate(-1.5deg);
+  width: max-content;
+}
+
+h1 {
+  font-family: var(--serif);
+  font-size: 48px;
+  line-height: 1.16;
+  text-wrap: pretty;
+
+  mark {
+    background: linear-gradient(180deg, transparent 62%, var(--highlighter) 62%);
+    color: inherit;
+    padding: 0 2px;
+  }
+}
+
+.body {
+  font-size: 16.5px;
+  line-height: 1.7;
+  color: var(--ink-2);
+  max-width: 480px;
+  margin: 22px 0 0;
+}
+
+.actions {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  margin-top: 30px;
+}
+
+.btn-sage {
+  background: var(--sage);
+  color: var(--paper);
+  font-size: 14.5px;
+  padding: 13px 26px;
+  border-radius: 4px;
+  transition: background 0.2s;
+
+  &:hover {
+    background: var(--sage-hover);
+    color: var(--paper);
+  }
+}
+
+.note {
+  font-family: var(--hand);
+  font-size: 21px;
+  color: var(--accent);
+  transform: rotate(-2deg);
+}
+
+.polaroid {
+  background: var(--card);
+  padding: 12px 12px 40px;
+  box-shadow: 0 8px 24px rgb(51 49 43 / 14%);
+  position: relative;
+  transform: rotate(2deg);
+  transition: transform 0.35s ease;
+
+  &:hover {
+    transform: rotate(0deg);
+  }
+}
+
+.tape {
+  position: absolute;
+  top: -12px;
+  left: 50%;
+  transform: translateX(-50%) rotate(-3deg);
+  width: 90px;
+  height: 26px;
+  background: rgb(222 214 188 / 80%);
+  box-shadow: 0 1px 2px rgb(0 0 0 / 8%);
+}
+
+.caption {
+  font-family: var(--hand);
+  font-size: 20px;
+  color: var(--ink-2);
+  text-align: center;
+  margin-top: 10px;
+}
+
+@media (max-width: 900px) {
+  /* the slot trades its fixed height for its natural proportions */
+  am-photo-slot {
+    width: 316px;
+    max-width: 100%;
+    height: auto;
+    aspect-ratio: 316 / 340;
+  }
+
+  header {
+    grid-template-columns: 1fr;
+    gap: 48px;
+    padding: 56px 24px 64px;
+  }
+
+  h1 {
+    font-size: 38px;
+  }
+
+  /* the polaroid keeps its tilt but centres under the copy */
+  .polaroid {
+    width: 316px;
+    max-width: 100%;
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 560px) {
+  header {
+    padding: 40px 20px 52px;
+  }
+
+  .greeting {
+    font-size: 23px;
+  }
+
+  h1 {
+    font-size: 30px;
+  }
+
+  .body {
+    font-size: 15.5px;
+  }
+
+  .actions {
+    flex-wrap: wrap;
+    gap: 12px;
+  }
+}

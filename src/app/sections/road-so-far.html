@@ -1,0 +1,29 @@
+<section id="path">
+  <div class="wrap">
+    <am-section-head
+      heading="The road so far"
+      aside="(1999 → today)"
+      tone="clay"
+      [washWidth]="170"
+      amReveal
+    />
+    <p class="intro" amReveal>From Classic ASP to coding agents. It's been a ride.</p>
+
+    <div class="timeline" amReveal>
+      @for (role of roles; track role.years) {
+        <div class="row">
+          <span class="years">{{ role.years }}</span>
+          <span class="what"
+            >{{ role.what }} <span class="where">· {{ role.where }}</span></span
+          >
+          <span class="note">{{ role.note }}</span>
+        </div>
+      }
+    </div>
+
+    <div class="education" amReveal>
+      <span>Florida State University — Graphic Design &amp; Computer Science</span>
+      <span>University of West Florida — Computer Information Systems</span>
+    </div>
+  </div>
+</section>

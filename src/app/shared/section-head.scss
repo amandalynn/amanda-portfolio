@@ -1,0 +1,39 @@
+:host {
+  display: flex;
+  align-items: baseline;
+  gap: 14px;
+  margin-bottom: 8px;
+  position: relative;
+}
+
+h2 {
+  font-family: var(--serif);
+  font-size: 30px;
+}
+
+.aside {
+  font-family: var(--hand);
+  font-size: 20px;
+  color: var(--sage);
+}
+
+.wash {
+  position: absolute;
+  left: -18px;
+  top: -14px;
+  height: 52px;
+  filter: blur(6px);
+  pointer-events: none;
+}
+
+.wash--sage {
+  background: radial-gradient(ellipse at 40% 50%, rgb(110 125 92 / 18%), transparent 70%);
+}
+
+.wash--clay {
+  background: radial-gradient(ellipse at 40% 50%, rgb(169 96 63 / 16%), transparent 70%);
+}
+
+.wash--blue {
+  background: radial-gradient(ellipse at 40% 50%, rgb(91 127 166 / 16%), transparent 70%);
+}

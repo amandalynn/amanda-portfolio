@@ -1,0 +1,111 @@
+section {
+  border-top: 1px solid var(--line);
+  scroll-margin-top: 70px;
+}
+
+.wrap {
+  max-width: 1080px;
+  margin: 0 auto;
+  padding: 72px 32px 86px;
+}
+
+.body {
+  font-size: 15.5px;
+  line-height: 1.7;
+  color: var(--ink-2);
+  max-width: 620px;
+  margin: 0 0 40px;
+}
+
+.hobbies {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+figure {
+  margin: 0;
+  background: var(--card);
+  padding: 10px 10px 14px;
+  box-shadow: 0 6px 18px rgb(51 49 43 / 13%);
+  transition: transform 0.35s ease;
+}
+
+figcaption {
+  font-family: var(--hand);
+  font-size: 19px;
+  color: var(--ink-2);
+  text-align: center;
+  margin-top: 8px;
+}
+
+/* Each polaroid sits at its own angle, and straightens on hover. */
+.hobbies > div:nth-child(1) figure {
+  transform: rotate(-2.5deg);
+
+  &:hover {
+    transform: rotate(0deg) translateY(-4px);
+  }
+}
+
+.hobbies > div:nth-child(2) figure {
+  transform: rotate(1.8deg) translateY(10px);
+
+  &:hover {
+    transform: rotate(0deg) translateY(6px);
+  }
+}
+
+.hobbies > div:nth-child(3) figure {
+  transform: rotate(-1.6deg);
+
+  &:hover {
+    transform: rotate(0deg) translateY(-4px);
+  }
+}
+
+.hobbies > div:nth-child(4) figure {
+  transform: rotate(2.2deg) translateY(8px);
+
+  &:hover {
+    transform: rotate(0deg) translateY(4px);
+  }
+}
+
+@media (max-width: 900px) {
+  .wrap {
+    padding: 56px 24px 64px;
+  }
+}
+
+@media (max-width: 560px) {
+  am-photo-slot {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 1;
+  }
+
+  .wrap {
+    padding: 48px 20px 56px;
+  }
+
+  /* two per row rather than a cramped single file. min-width:0 is what lets the
+     polaroid shrink below its 185px intrinsic size. */
+  .hobbies {
+    gap: 14px;
+  }
+
+  .hobbies > div {
+    flex: 0 1 calc(50% - 7px);
+    min-width: 0;
+  }
+
+  figure {
+    padding: 8px 8px 10px;
+  }
+
+  figcaption {
+    font-size: 17px;
+  }
+}

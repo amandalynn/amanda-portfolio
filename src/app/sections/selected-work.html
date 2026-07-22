@@ -1,0 +1,32 @@
+<section id="work">
+  <div class="wrap">
+    <am-section-head heading="Selected work" aside="(the good stuff)" amReveal />
+    <p class="intro" amReveal>
+      Twenty-six years is a lot of shipping. These are the entries I'd dog-ear.
+    </p>
+
+    <div class="cards">
+      @for (card of cards; track card.title) {
+        <article class="card" [style.--tilt]="card.tilt + 'deg'" amReveal>
+          <div class="kicker" [class]="'kicker--' + card.kickerTone">
+            {{ card.kicker }}
+          </div>
+          <h3>{{ card.title }}</h3>
+          <p>{{ card.body }}</p>
+          <div class="chips">
+            @for (tag of card.tags; track tag) {
+              <span class="chip">{{ tag }}</span>
+            }
+          </div>
+        </article>
+      }
+    </div>
+
+    <div amReveal>
+      <p class="footnote">
+        also: I literally wrote the book —
+        <span>Idiot's Guide: Web Design with HTML and CSS</span>
+      </p>
+    </div>
+  </div>
+</section>

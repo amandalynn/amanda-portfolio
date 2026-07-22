@@ -1,0 +1,149 @@
+/* Amanda Myers — global tokens and element defaults.
+   Everything is exposed as a custom property so component styles (which are
+   view-encapsulated) can reach them without importing anything.
+
+   Six ink/accent values sit a step darker than the original design handoff so
+   every text pairing clears WCAG AA (4.5:1); the handoff value is noted beside
+   each. Backgrounds, lines, and decorative fills are unchanged. */
+
+:root {
+  /* paper */
+  --paper: #f5f1e8;
+  --paper-alt: #efeadd;
+  --card: #fff;
+
+  /* ink */
+  --ink: #33312b;
+  --ink-body: #4a463c;
+  --ink-2: #615b4d;
+  --ink-muted: #736d5c; /* handoff #77705f — 4.37:1 */
+  --ink-faint: #6f695a; /* handoff #9a927d — 2.58:1 */
+
+  /* accents */
+  --accent: #a25c3c; /* handoff #a9603f — 4.20:1. Recolors nav star, hero note,
+                        Kapoq kicker, toolbox col 1 */
+  --sage: #616e51; /* handoff #6e7d5c — 3.68:1, and 3.92:1 as the button fill */
+  --sage-hover: #525e45; /* primary button, hover */
+  --tan: #847558; /* handoff #8a7a5c — 4.18:1 */
+  --blue: #5b7fa6;
+  --highlighter: #dfe5cf;
+
+  /* lines */
+  --line: #ddd5c2;
+  --line-card: #e3dcc9;
+
+  /* dusk */
+  --dusk-bg: #2e3440;
+  --dusk-cream: #ede6d3;
+  --dusk-body: #b8bfc9;
+  --dusk-muted: #939cab; /* handoff #8b95a5 — 4.13:1 */
+  --dusk-sage: #a8b3a0;
+  --dusk-line: #454e5e;
+  --dusk-outline: #5a6475;
+
+  /* type */
+  --serif: 'Libre Caslon Text', Georgia, serif;
+  --sans: Karla, system-ui, sans-serif;
+  --hand: Caveat, cursive;
+
+  /* paused by the reduced-motion query below */
+  --motion: running;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  background: var(--paper);
+  font-family: var(--sans);
+  color: var(--ink);
+  -webkit-font-smoothing: antialiased;
+}
+
+a {
+  color: var(--accent);
+  text-decoration: none;
+}
+
+a:hover {
+  color: var(--sage);
+}
+
+h1,
+h2,
+h3 {
+  font-weight: 400;
+  margin: 0;
+}
+
+@keyframes twinkle {
+  0%,
+  100% {
+    opacity: 0.25;
+    transform: scale(0.8);
+  }
+  50% {
+    opacity: 1;
+    transform: scale(1.1);
+  }
+}
+
+@keyframes shoot {
+  0% {
+    transform: translate(0, 0) rotate(-24deg);
+    opacity: 0;
+  }
+  5% {
+    opacity: 1;
+  }
+  18%,
+  100% {
+    transform: translate(-340px, 150px) rotate(-24deg);
+    opacity: 0;
+  }
+}
+
+/* Scroll reveals. The Reveal directive adds .is-revealed on intersection; the
+   hidden state is gated on .js so a scripting-free load still shows the
+   prerendered HTML rather than a blank page. */
+.js .reveal {
+  opacity: 0;
+  transform: translateY(14px);
+}
+
+.js .reveal.is-revealed {
+  opacity: 1;
+  transform: none;
+  transition:
+    opacity 0.7s ease,
+    transform 0.7s ease;
+}
+
+@media print {
+  body {
+    background: #fff;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  :root {
+    --motion: paused;
+  }
+
+  html {
+    scroll-behavior: auto;
+  }
+
+  .js .reveal {
+    opacity: 1;
+    transform: none;
+  }
+}

@@ -1,0 +1,33 @@
+<section id="about">
+  <div class="wrap">
+    <am-section-head
+      heading="After hours"
+      aside="(where the good ideas come from)"
+      tone="blue"
+      amReveal
+    />
+    <p class="body" amReveal>
+      Persistence, curiosity, and an obsessive attention to detail define my work — but the
+      curiosity doesn't clock out. You'll find me under a dark sky, on a trail, behind a lens, or
+      elbow-deep in watercolors.
+    </p>
+
+    <div class="hobbies">
+      @for (hobby of hobbies; track hobby.src) {
+        <!-- Wrapped: each polaroid carries its own resting rotation. -->
+        <div amReveal>
+          <figure>
+            <am-photo-slot
+              [src]="hobby.src"
+              [alt]="hobby.alt"
+              [placeholder]="hobby.placeholder"
+              [width]="185"
+              [height]="185"
+            />
+            <figcaption>{{ hobby.caption }}</figcaption>
+          </figure>
+        </div>
+      }
+    </div>
+  </div>
+</section>
